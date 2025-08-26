@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+.vscode/
+dist/
+*.log
+*.zip
+*.wav
+*.mp3
+*.mp4
+.cache/

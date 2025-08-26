@@ -1,0 +1,15 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+:root{ color-scheme: dark } body{ @apply bg-black text-white antialiased }
+.glass{ @apply backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl shadow-glass }
+.capsule{ @apply rounded-full bg-white/5 border border-white/10 p-1 }
+.nav-wrap{ position:relative; overflow:hidden }
+.nav-highlight{
+  position:absolute; top:4px; bottom:4px; border-radius:9999px; background:#fff;
+  box-shadow: inset 0 0 20px rgba(255,255,255,.20), 0 0 0 2px rgba(0,0,0,.65);
+  transition:left .38s cubic-bezier(.22,1,.36,1), width .38s cubic-bezier(.22,1,.36,1);
+  will-change:left,width,transform
+}
+.modal-backdrop{ position:fixed; inset:0; background:rgba(0,0,0,.6) }
+.goo{ filter:url(#goo) }
+.msg-me{ @apply self-end bg-white text-black }
+.msg-peer{ @apply self-start bg-white/10 text-white border border-white/10 }

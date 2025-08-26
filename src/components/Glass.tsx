@@ -1,0 +1,1 @@
+import React from "react";export const Glass=React.forwardRef<HTMLDivElement,React.HTMLAttributes<HTMLDivElement>>(function G({className="",...rest},ref){return <div ref={ref} className={`glass ${className}`} {...rest}/>});
